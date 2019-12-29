@@ -11,6 +11,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @Controller
+@RequestMapping("/user")
 public class UserController {
 
 
@@ -34,8 +35,9 @@ public class UserController {
 
     @PostMapping("/addUserRole")
     @ResponseBody
-    public List<UserRole> saveUserRoles(@RequestBody List<UserRoleDto> userRoles){
-       return userService.saveUserRole(userRoles);
+    public String saveUserRoles(@RequestBody UserRoleDto userRoleDto){
+        System.out.println(userRoleDto.toString());
+        return null;
     }
 
     @GetMapping("/getUserRoleById")
