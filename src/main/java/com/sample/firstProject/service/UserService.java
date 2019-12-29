@@ -12,5 +12,7 @@ public interface UserService {
 
     UserRoleDto getUserRole(long userId);
 
+    UserRole saveUserRole(UserRoleDto userRoleDto);
+
     UserRole updateUserRole(UserRoleDto userRoleDto);
 }

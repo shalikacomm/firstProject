@@ -37,6 +37,11 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
+    public UserRole saveUserRole(UserRoleDto userRoleDto){
+       return userRoleRepository.save(DtoToEntityMapperUser.getuserRole(new UserRole(),userRoleDto));
+    }
+
+    @Override
     public UserRole updateUserRole(UserRoleDto userRoleDto){
         UserRole userRole = userRoleRepository.findByName(userRoleDto.getName());
         userRole= DtoToEntityMapperUser.getuserRole(userRole,userRoleDto);

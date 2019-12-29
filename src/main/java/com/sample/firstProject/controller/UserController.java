@@ -35,9 +35,8 @@ public class UserController {
 
     @PostMapping("/addUserRole")
     @ResponseBody
-    public String saveUserRoles(@RequestBody UserRoleDto userRoleDto){
-        System.out.println(userRoleDto.toString());
-        return null;
+    public UserRole saveUserRoles(@RequestBody UserRoleDto userRoleDto){
+ return userService.saveUserRole(userRoleDto);
     }
 
     @GetMapping("/getUserRoleById")
