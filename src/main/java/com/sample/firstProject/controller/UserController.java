@@ -25,7 +25,7 @@ public class UserController {
         return "First Page";
     }
 
-
+// uygigug
     @GetMapping("/getUserRole")
     @ResponseBody
     public List<UserRole> findUserRole(){
