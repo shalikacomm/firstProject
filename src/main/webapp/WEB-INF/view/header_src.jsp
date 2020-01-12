@@ -11,4 +11,4 @@
 <link rel="stylesheet" href="../../resources/static/plugins/timeline/timeline.css" />
 <!-- END PAGE LEVEL  STYLES -->
 <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-
+<link href="https://cdn.datatables.net/1.10.20/css/jquery.dataTables.css" rel="stylesheet" />

@@ -10,3 +10,5 @@
 <script src="../../resources/static/plugins/flot/jquery.flot.time.js"></script>
 <script  src="../../resources/static/plugins/flot/jquery.flot.stack.js"></script>
 <script src="../../resources/static/js/for_index.js"></script>
+<script src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.js"></script>
+
